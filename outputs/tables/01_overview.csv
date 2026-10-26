@@ -1,0 +1,2 @@
+first_day,last_day,transaction_lines,orders,identified_customers,products,countries,total_revenue,total_units,avg_order_value,avg_revenue_per_unit
+2009-12-01,2011-12-09,997367,39336,5839,4718,43,19097385.19,10798048,485.49,1.77

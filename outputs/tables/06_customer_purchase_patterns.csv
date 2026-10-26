@@ -1,0 +1,5 @@
+order_band,customers,pct_of_customers,revenue,pct_of_revenue,mean_avg_order_value
+10+ orders,959,16.4,11181686.22,67.7,436.55
+4-9 orders,1654,28.3,3425705.04,20.7,349.27
+2-3 orders,1613,27.6,1361447.46,8.2,354.59
+1 order,1613,27.6,553267.57,3.3,343.01

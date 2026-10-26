@@ -1,0 +1,1185 @@
+{
+  "meta": {
+    "project": "E-commerce sales analysis",
+    "dataset": "Online Retail II (UCI Machine Learning Repository, dataset 502)",
+    "dataset_url": "https://archive.ics.uci.edu/dataset/502/online+retail+ii",
+    "licence": "CC BY 4.0",
+    "currency": "GBP",
+    "note": "Figures are calculated from the cleaned data by the SQL in sql/. December 2011 covers 9 days only and is excluded from growth comparisons."
+  },
+  "headline": {
+    "period": "2009-12-01 to 2011-12-09",
+    "total_revenue": 19097385.19,
+    "orders": 39336,
+    "transaction_lines": 997367,
+    "identified_customers": 5839,
+    "products": 4718,
+    "countries": 43,
+    "avg_order_value": 485.49,
+    "median_order_value": 299.34,
+    "uk_share_of_revenue_pct": 85.5,
+    "autumn_share_of_revenue_pct": 36.8,
+    "peak_month": "2011-11",
+    "peak_month_revenue": 1441525.58,
+    "trough_month": "2011-02",
+    "trough_month_revenue": 504843.85,
+    "peak_to_trough_ratio": 2.86,
+    "top10_products_share_pct": 7.3,
+    "typical_returning_revenue_share_pct": 90.9,
+    "yoy": {
+      "year1_label": "Year 1 (Dec 2009 - Nov 2010)",
+      "year2_label": "Year 2 (Dec 2010 - Nov 2011)",
+      "revenue_change_pct": 2.2,
+      "orders_change_pct": -3.8,
+      "units_change_pct": -6.3,
+      "aov_change_pct": 6.2,
+      "year1_revenue": 9226574.93,
+      "year2_revenue": 9425361.16,
+      "year1_orders": 19633,
+      "year2_orders": 18890,
+      "year1_aov": 469.95,
+      "year2_aov": 498.96
+    }
+  },
+  "monthly": [
+    {
+      "invoice_month": "2009-12",
+      "revenue": 788229.4,
+      "orders": 1660,
+      "active_customers": 951,
+      "units": 420665,
+      "avg_order_value": 474.84,
+      "prev_month_revenue": null,
+      "mom_change_pct": null,
+      "running_total_revenue": 788229.4,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2010-01",
+      "revenue": 606229.4,
+      "orders": 1041,
+      "active_customers": 697,
+      "units": 387381,
+      "avg_order_value": 582.35,
+      "prev_month_revenue": 788229.4,
+      "mom_change_pct": -23.1,
+      "running_total_revenue": 1394458.8,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2010-02",
+      "revenue": 528460.16,
+      "orders": 1179,
+      "active_customers": 768,
+      "units": 375586,
+      "avg_order_value": 448.23,
+      "prev_month_revenue": 606229.4,
+      "mom_change_pct": -12.8,
+      "running_total_revenue": 1922918.96,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2010-03",
+      "revenue": 753894.4,
+      "orders": 1640,
+      "active_customers": 1049,
+      "units": 521132,
+      "avg_order_value": 459.69,
+      "prev_month_revenue": 528460.16,
+      "mom_change_pct": 42.7,
+      "running_total_revenue": 2676813.36,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2010-04",
+      "revenue": 630283.06,
+      "orders": 1429,
+      "active_customers": 937,
+      "units": 355181,
+      "avg_order_value": 441.07,
+      "prev_month_revenue": 753894.4,
+      "mom_change_pct": -16.4,
+      "running_total_revenue": 3307096.42,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2010-05",
+      "revenue": 623935.04,
+      "orders": 1476,
+      "active_customers": 962,
+      "units": 382314,
+      "avg_order_value": 422.72,
+      "prev_month_revenue": 630283.06,
+      "mom_change_pct": -1.0,
+      "running_total_revenue": 3931031.46,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2010-06",
+      "revenue": 685393.61,
+      "orders": 1608,
+      "active_customers": 1034,
+      "units": 399771,
+      "avg_order_value": 426.24,
+      "prev_month_revenue": 623935.04,
+      "mom_change_pct": 9.9,
+      "running_total_revenue": 4616425.07,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2010-07",
+      "revenue": 618473.49,
+      "orders": 1494,
+      "active_customers": 922,
+      "units": 331495,
+      "avg_order_value": 413.97,
+      "prev_month_revenue": 685393.61,
+      "mom_change_pct": -9.8,
+      "running_total_revenue": 5234898.56,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2010-08",
+      "revenue": 655731.81,
+      "orders": 1396,
+      "active_customers": 909,
+      "units": 382265,
+      "avg_order_value": 469.72,
+      "prev_month_revenue": 618473.49,
+      "mom_change_pct": 6.0,
+      "running_total_revenue": 5890630.37,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2010-09",
+      "revenue": 853569.94,
+      "orders": 1774,
+      "active_customers": 1130,
+      "units": 574590,
+      "avg_order_value": 481.16,
+      "prev_month_revenue": 655731.81,
+      "mom_change_pct": 30.2,
+      "running_total_revenue": 6744200.31,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2010-10",
+      "revenue": 1067139.56,
+      "orders": 2230,
+      "active_customers": 1486,
+      "units": 608016,
+      "avg_order_value": 478.54,
+      "prev_month_revenue": 853569.94,
+      "mom_change_pct": 25.0,
+      "running_total_revenue": 7811339.87,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2010-11",
+      "revenue": 1415235.06,
+      "orders": 2706,
+      "active_customers": 1602,
+      "units": 716676,
+      "avg_order_value": 523.0,
+      "prev_month_revenue": 1067139.56,
+      "mom_change_pct": 32.6,
+      "running_total_revenue": 9226574.93,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2010-12",
+      "revenue": 769004.47,
+      "orders": 1546,
+      "active_customers": 884,
+      "units": 354591,
+      "avg_order_value": 497.42,
+      "prev_month_revenue": 1415235.06,
+      "mom_change_pct": -45.7,
+      "running_total_revenue": 9995579.4,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2011-01",
+      "revenue": 565560.03,
+      "orders": 1077,
+      "active_customers": 737,
+      "units": 301381,
+      "avg_order_value": 525.13,
+      "prev_month_revenue": 769004.47,
+      "mom_change_pct": -26.5,
+      "running_total_revenue": 10561139.43,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2011-02",
+      "revenue": 504843.85,
+      "orders": 1090,
+      "active_customers": 756,
+      "units": 281755,
+      "avg_order_value": 463.16,
+      "prev_month_revenue": 565560.03,
+      "mom_change_pct": -10.7,
+      "running_total_revenue": 11065983.28,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2011-03",
+      "revenue": 681662.25,
+      "orders": 1435,
+      "active_customers": 971,
+      "units": 373397,
+      "avg_order_value": 475.03,
+      "prev_month_revenue": 504843.85,
+      "mom_change_pct": 35.0,
+      "running_total_revenue": 11747645.53,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2011-04",
+      "revenue": 511204.5,
+      "orders": 1229,
+      "active_customers": 850,
+      "units": 305575,
+      "avg_order_value": 415.95,
+      "prev_month_revenue": 681662.25,
+      "mom_change_pct": -25.0,
+      "running_total_revenue": 12258850.03,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2011-05",
+      "revenue": 733328.01,
+      "orders": 1662,
+      "active_customers": 1052,
+      "units": 391161,
+      "avg_order_value": 441.23,
+      "prev_month_revenue": 511204.5,
+      "mom_change_pct": 43.5,
+      "running_total_revenue": 12992178.04,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2011-06",
+      "revenue": 728753.86,
+      "orders": 1518,
+      "active_customers": 989,
+      "units": 381860,
+      "avg_order_value": 480.08,
+      "prev_month_revenue": 733328.01,
+      "mom_change_pct": -0.6,
+      "running_total_revenue": 13720931.9,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2011-07",
+      "revenue": 679535.26,
+      "orders": 1447,
+      "active_customers": 946,
+      "units": 395202,
+      "avg_order_value": 469.62,
+      "prev_month_revenue": 728753.86,
+      "mom_change_pct": -6.8,
+      "running_total_revenue": 14400467.16,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2011-08",
+      "revenue": 719055.91,
+      "orders": 1336,
+      "active_customers": 933,
+      "units": 418328,
+      "avg_order_value": 538.22,
+      "prev_month_revenue": 679535.26,
+      "mom_change_pct": 5.8,
+      "running_total_revenue": 15119523.07,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2011-09",
+      "revenue": 1017713.77,
+      "orders": 1811,
+      "active_customers": 1256,
+      "units": 564857,
+      "avg_order_value": 561.96,
+      "prev_month_revenue": 719055.91,
+      "mom_change_pct": 41.5,
+      "running_total_revenue": 16137236.84,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2011-10",
+      "revenue": 1073173.67,
+      "orders": 1993,
+      "active_customers": 1358,
+      "units": 602780,
+      "avg_order_value": 538.47,
+      "prev_month_revenue": 1017713.77,
+      "mom_change_pct": 5.4,
+      "running_total_revenue": 17210410.51,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2011-11",
+      "revenue": 1441525.58,
+      "orders": 2746,
+      "active_customers": 1659,
+      "units": 740872,
+      "avg_order_value": 524.95,
+      "prev_month_revenue": 1073173.67,
+      "mom_change_pct": 34.3,
+      "running_total_revenue": 18651936.09,
+      "month_status": "complete month"
+    },
+    {
+      "invoice_month": "2011-12",
+      "revenue": 445449.1,
+      "orders": 813,
+      "active_customers": 612,
+      "units": 231217,
+      "avg_order_value": 547.91,
+      "prev_month_revenue": 1441525.58,
+      "mom_change_pct": -69.1,
+      "running_total_revenue": 19097385.19,
+      "month_status": "partial month (9 days only)"
+    }
+  ],
+  "top_products": [
+    {
+      "stock_code": "22423",
+      "description": "REGENCY CAKESTAND 3 TIER",
+      "units_sold": 25796,
+      "orders_containing_item": 3820,
+      "revenue": 322805.62,
+      "avg_unit_price": 14.23,
+      "share_of_total_pct": 1.69
+    },
+    {
+      "stock_code": "85123A",
+      "description": "WHITE HANGING HEART T-LIGHT HOLDER",
+      "units_sold": 91294,
+      "orders_containing_item": 5423,
+      "revenue": 252345.62,
+      "avg_unit_price": 3.14,
+      "share_of_total_pct": 1.32
+    },
+    {
+      "stock_code": "47566",
+      "description": "PARTY BUNTING",
+      "units_sold": 28002,
+      "orders_containing_item": 2663,
+      "revenue": 147459.98,
+      "avg_unit_price": 5.72,
+      "share_of_total_pct": 0.77
+    },
+    {
+      "stock_code": "85099B",
+      "description": "JUMBO BAG RED RETROSPOT",
+      "units_sold": 76802,
+      "orders_containing_item": 3254,
+      "revenue": 146483.69,
+      "avg_unit_price": 2.39,
+      "share_of_total_pct": 0.77
+    },
+    {
+      "stock_code": "84879",
+      "description": "ASSORTED COLOUR BIRD ORNAMENT",
+      "units_sold": 79632,
+      "orders_containing_item": 2800,
+      "revenue": 128653.51,
+      "avg_unit_price": 1.86,
+      "share_of_total_pct": 0.67
+    },
+    {
+      "stock_code": "22086",
+      "description": "PAPER CHAIN KIT 50'S CHRISTMAS",
+      "units_sold": 34619,
+      "orders_containing_item": 2006,
+      "revenue": 116564.54,
+      "avg_unit_price": 3.37,
+      "share_of_total_pct": 0.61
+    },
+    {
+      "stock_code": "79321",
+      "description": "CHILLI LIGHTS",
+      "units_sold": 15735,
+      "orders_containing_item": 1129,
+      "revenue": 80079.38,
+      "avg_unit_price": 6.3,
+      "share_of_total_pct": 0.42
+    },
+    {
+      "stock_code": "84347",
+      "description": "ROTATING SILVER ANGELS T-LIGHT HLDR",
+      "units_sold": 31403,
+      "orders_containing_item": 755,
+      "revenue": 71285.1,
+      "avg_unit_price": 3.34,
+      "share_of_total_pct": 0.37
+    },
+    {
+      "stock_code": "85099F",
+      "description": "JUMBO BAG STRAWBERRY",
+      "units_sold": 36828,
+      "orders_containing_item": 1850,
+      "revenue": 68587.85,
+      "avg_unit_price": 2.33,
+      "share_of_total_pct": 0.36
+    },
+    {
+      "stock_code": "23084",
+      "description": "RABBIT NIGHT LIGHT",
+      "units_sold": 30709,
+      "orders_containing_item": 991,
+      "revenue": 66807.63,
+      "avg_unit_price": 2.39,
+      "share_of_total_pct": 0.35
+    },
+    {
+      "stock_code": "21137",
+      "description": "BLACK RECORD COVER FRAME",
+      "units_sold": 18727,
+      "orders_containing_item": 631,
+      "revenue": 65144.29,
+      "avg_unit_price": 4.15,
+      "share_of_total_pct": 0.34
+    },
+    {
+      "stock_code": "21931",
+      "description": "JUMBO STORAGE BAG SUKI",
+      "units_sold": 28839,
+      "orders_containing_item": 2319,
+      "revenue": 60920.27,
+      "avg_unit_price": 2.54,
+      "share_of_total_pct": 0.32
+    }
+  ],
+  "categories": [
+    {
+      "category": "Other",
+      "transaction_lines": 218944,
+      "orders": 30650,
+      "units_sold": 2385072,
+      "revenue": 3668898.42,
+      "share_of_revenue_pct": 19.2
+    },
+    {
+      "category": "Kitchen & Baking",
+      "transaction_lines": 171128,
+      "orders": 27762,
+      "units_sold": 1697809,
+      "revenue": 3502208.55,
+      "share_of_revenue_pct": 18.3
+    },
+    {
+      "category": "Home Decor",
+      "transaction_lines": 161683,
+      "orders": 27372,
+      "units_sold": 1614509,
+      "revenue": 2957431.48,
+      "share_of_revenue_pct": 15.5
+    },
+    {
+      "category": "Bags",
+      "transaction_lines": 94425,
+      "orders": 18731,
+      "units_sold": 1113765,
+      "revenue": 1954681.73,
+      "share_of_revenue_pct": 10.2
+    },
+    {
+      "category": "Storage & Boxes",
+      "transaction_lines": 77686,
+      "orders": 22536,
+      "units_sold": 788934,
+      "revenue": 1758617.33,
+      "share_of_revenue_pct": 9.2
+    },
+    {
+      "category": "Candles & Lighting",
+      "transaction_lines": 74177,
+      "orders": 21443,
+      "units_sold": 1000771,
+      "revenue": 1745517.69,
+      "share_of_revenue_pct": 9.1
+    },
+    {
+      "category": "Paper & Party",
+      "transaction_lines": 77091,
+      "orders": 19701,
+      "units_sold": 992759,
+      "revenue": 1203473.92,
+      "share_of_revenue_pct": 6.3
+    },
+    {
+      "category": "Christmas & Seasonal",
+      "transaction_lines": 49524,
+      "orders": 11309,
+      "units_sold": 608705,
+      "revenue": 924370.08,
+      "share_of_revenue_pct": 4.8
+    },
+    {
+      "category": "Garden & Outdoor",
+      "transaction_lines": 34214,
+      "orders": 13597,
+      "units_sold": 278171,
+      "revenue": 799245.89,
+      "share_of_revenue_pct": 4.2
+    },
+    {
+      "category": "Toys & Games",
+      "transaction_lines": 22649,
+      "orders": 9962,
+      "units_sold": 167727,
+      "revenue": 356628.51,
+      "share_of_revenue_pct": 1.9
+    },
+    {
+      "category": "Jewellery & Accessories",
+      "transaction_lines": 15846,
+      "orders": 5674,
+      "units_sold": 149826,
+      "revenue": 226311.59,
+      "share_of_revenue_pct": 1.2
+    }
+  ],
+  "countries": [
+    {
+      "country": "United Kingdom",
+      "orders": 36032,
+      "customers": 5326,
+      "revenue": 16320357.84,
+      "avg_order_value": 452.94,
+      "share_of_revenue_pct": 85.46,
+      "revenue_rank": 1
+    },
+    {
+      "country": "EIRE",
+      "orders": 579,
+      "customers": 3,
+      "revenue": 606326.22,
+      "avg_order_value": 1047.2,
+      "share_of_revenue_pct": 3.17,
+      "revenue_rank": 2
+    },
+    {
+      "country": "Netherlands",
+      "orders": 215,
+      "customers": 22,
+      "revenue": 546888.53,
+      "avg_order_value": 2543.67,
+      "share_of_revenue_pct": 2.86,
+      "revenue_rank": 3
+    },
+    {
+      "country": "Germany",
+      "orders": 753,
+      "customers": 107,
+      "revenue": 380127.35,
+      "avg_order_value": 504.82,
+      "share_of_revenue_pct": 1.99,
+      "revenue_rank": 4
+    },
+    {
+      "country": "France",
+      "orders": 598,
+      "customers": 93,
+      "revenue": 296063.93,
+      "avg_order_value": 495.09,
+      "share_of_revenue_pct": 1.55,
+      "revenue_rank": 5
+    },
+    {
+      "country": "Australia",
+      "orders": 86,
+      "customers": 15,
+      "revenue": 166769.8,
+      "avg_order_value": 1939.18,
+      "share_of_revenue_pct": 0.87,
+      "revenue_rank": 6
+    },
+    {
+      "country": "Switzerland",
+      "orders": 84,
+      "customers": 22,
+      "revenue": 93328.56,
+      "avg_order_value": 1111.05,
+      "share_of_revenue_pct": 0.49,
+      "revenue_rank": 7
+    },
+    {
+      "country": "Spain",
+      "orders": 141,
+      "customers": 38,
+      "revenue": 85092.83,
+      "avg_order_value": 603.5,
+      "share_of_revenue_pct": 0.45,
+      "revenue_rank": 8
+    },
+    {
+      "country": "Sweden",
+      "orders": 99,
+      "customers": 19,
+      "revenue": 84655.74,
+      "avg_order_value": 855.11,
+      "share_of_revenue_pct": 0.44,
+      "revenue_rank": 9
+    },
+    {
+      "country": "Denmark",
+      "orders": 42,
+      "customers": 12,
+      "revenue": 63478.19,
+      "avg_order_value": 1511.39,
+      "share_of_revenue_pct": 0.33,
+      "revenue_rank": 10
+    },
+    {
+      "country": "Belgium",
+      "orders": 143,
+      "customers": 29,
+      "revenue": 56803.77,
+      "avg_order_value": 397.23,
+      "share_of_revenue_pct": 0.3,
+      "revenue_rank": 11
+    },
+    {
+      "country": "Portugal",
+      "orders": 84,
+      "customers": 22,
+      "revenue": 46863.23,
+      "avg_order_value": 557.9,
+      "share_of_revenue_pct": 0.25,
+      "revenue_rank": 12
+    }
+  ],
+  "customer_bands": [
+    {
+      "order_band": "10+ orders",
+      "customers": 959,
+      "pct_of_customers": 16.4,
+      "revenue": 11181686.22,
+      "pct_of_revenue": 67.7,
+      "mean_avg_order_value": 436.55
+    },
+    {
+      "order_band": "4-9 orders",
+      "customers": 1654,
+      "pct_of_customers": 28.3,
+      "revenue": 3425705.04,
+      "pct_of_revenue": 20.7,
+      "mean_avg_order_value": 349.27
+    },
+    {
+      "order_band": "2-3 orders",
+      "customers": 1613,
+      "pct_of_customers": 27.6,
+      "revenue": 1361447.46,
+      "pct_of_revenue": 8.2,
+      "mean_avg_order_value": 354.59
+    },
+    {
+      "order_band": "1 order",
+      "customers": 1613,
+      "pct_of_customers": 27.6,
+      "revenue": 553267.57,
+      "pct_of_revenue": 3.3,
+      "mean_avg_order_value": 343.01
+    }
+  ],
+  "order_value_bands": [
+    {
+      "order_value_band": "a. Under GBP 50",
+      "orders": 3403,
+      "pct_of_orders": 8.7,
+      "revenue": 69038.5,
+      "pct_of_revenue": 0.4
+    },
+    {
+      "order_value_band": "b. GBP 50-150",
+      "orders": 6507,
+      "pct_of_orders": 16.5,
+      "revenue": 699064.09,
+      "pct_of_revenue": 3.7
+    },
+    {
+      "order_value_band": "c. GBP 150-350",
+      "orders": 14279,
+      "pct_of_orders": 36.3,
+      "revenue": 3585295.65,
+      "pct_of_revenue": 18.8
+    },
+    {
+      "order_value_band": "d. GBP 350-750",
+      "orders": 9948,
+      "pct_of_orders": 25.3,
+      "revenue": 4900367.28,
+      "pct_of_revenue": 25.7
+    },
+    {
+      "order_value_band": "e. GBP 750-2,000",
+      "orders": 4052,
+      "pct_of_orders": 10.3,
+      "revenue": 4575618.52,
+      "pct_of_revenue": 24.0
+    },
+    {
+      "order_value_band": "f. GBP 2,000+",
+      "orders": 1147,
+      "pct_of_orders": 2.9,
+      "revenue": 5268001.15,
+      "pct_of_revenue": 27.6
+    }
+  ],
+  "credits_by_month": [
+    {
+      "invoice_month": "2009-12",
+      "net_revenue": 788229.4,
+      "orders": 1660,
+      "credit_notes": 401,
+      "matched_credit_removed": 4367.97,
+      "unmatched_credit_remaining": 21467.48,
+      "unmatched_credit_pct": 2.7
+    },
+    {
+      "invoice_month": "2010-01",
+      "net_revenue": 606229.4,
+      "orders": 1041,
+      "credit_notes": 300,
+      "matched_credit_removed": 2930.82,
+      "unmatched_credit_remaining": 25744.79,
+      "unmatched_credit_pct": 4.2
+    },
+    {
+      "invoice_month": "2010-02",
+      "net_revenue": 528460.16,
+      "orders": 1179,
+      "credit_notes": 240,
+      "matched_credit_removed": 7997.59,
+      "unmatched_credit_remaining": 12241.77,
+      "unmatched_credit_pct": 2.3
+    },
+    {
+      "invoice_month": "2010-03",
+      "net_revenue": 753894.4,
+      "orders": 1640,
+      "credit_notes": 407,
+      "matched_credit_removed": 4490.45,
+      "unmatched_credit_remaining": 63177.57,
+      "unmatched_credit_pct": 8.4
+    },
+    {
+      "invoice_month": "2010-04",
+      "net_revenue": 630283.06,
+      "orders": 1429,
+      "credit_notes": 304,
+      "matched_credit_removed": 5566.25,
+      "unmatched_credit_remaining": 31787.95,
+      "unmatched_credit_pct": 5.0
+    },
+    {
+      "invoice_month": "2010-05",
+      "net_revenue": 623935.04,
+      "orders": 1476,
+      "credit_notes": 407,
+      "matched_credit_removed": 21352.64,
+      "unmatched_credit_remaining": 23082.14,
+      "unmatched_credit_pct": 3.7
+    },
+    {
+      "invoice_month": "2010-06",
+      "net_revenue": 685393.61,
+      "orders": 1608,
+      "credit_notes": 357,
+      "matched_credit_removed": 18311.15,
+      "unmatched_credit_remaining": 54152.29,
+      "unmatched_credit_pct": 7.9
+    },
+    {
+      "invoice_month": "2010-07",
+      "net_revenue": 618473.49,
+      "orders": 1494,
+      "credit_notes": 344,
+      "matched_credit_removed": 12566.09,
+      "unmatched_credit_remaining": 18878.7,
+      "unmatched_credit_pct": 3.1
+    },
+    {
+      "invoice_month": "2010-08",
+      "net_revenue": 655731.81,
+      "orders": 1396,
+      "credit_notes": 273,
+      "matched_credit_removed": 9123.88,
+      "unmatched_credit_remaining": 31353.64,
+      "unmatched_credit_pct": 4.8
+    },
+    {
+      "invoice_month": "2010-09",
+      "net_revenue": 853569.94,
+      "orders": 1774,
+      "credit_notes": 371,
+      "matched_credit_removed": 22516.35,
+      "unmatched_credit_remaining": 48074.68,
+      "unmatched_credit_pct": 5.6
+    },
+    {
+      "invoice_month": "2010-10",
+      "net_revenue": 1067139.56,
+      "orders": 2230,
+      "credit_notes": 476,
+      "matched_credit_removed": 18925.7,
+      "unmatched_credit_remaining": 62365.04,
+      "unmatched_credit_pct": 5.8
+    },
+    {
+      "invoice_month": "2010-11",
+      "net_revenue": 1415235.06,
+      "orders": 2706,
+      "credit_notes": 576,
+      "matched_credit_removed": 22513.9,
+      "unmatched_credit_remaining": 25082.04,
+      "unmatched_credit_pct": 1.8
+    },
+    {
+      "invoice_month": "2010-12",
+      "net_revenue": 769004.47,
+      "orders": 1546,
+      "credit_notes": 326,
+      "matched_credit_removed": 11555.73,
+      "unmatched_credit_remaining": 63173.39,
+      "unmatched_credit_pct": 8.2
+    },
+    {
+      "invoice_month": "2011-01",
+      "net_revenue": 565560.03,
+      "orders": 1077,
+      "credit_notes": 260,
+      "matched_credit_removed": 85786.63,
+      "unmatched_credit_remaining": 45576.42,
+      "unmatched_credit_pct": 8.1
+    },
+    {
+      "invoice_month": "2011-02",
+      "net_revenue": 504843.85,
+      "orders": 1090,
+      "credit_notes": 219,
+      "matched_credit_removed": 4742.19,
+      "unmatched_credit_remaining": 20776.96,
+      "unmatched_credit_pct": 4.1
+    },
+    {
+      "invoice_month": "2011-03",
+      "net_revenue": 681662.25,
+      "orders": 1435,
+      "credit_notes": 318,
+      "matched_credit_removed": 5566.11,
+      "unmatched_credit_remaining": 28635.17,
+      "unmatched_credit_pct": 4.2
+    },
+    {
+      "invoice_month": "2011-04",
+      "net_revenue": 511204.5,
+      "orders": 1229,
+      "credit_notes": 240,
+      "matched_credit_removed": 25404.8,
+      "unmatched_credit_remaining": 19195.85,
+      "unmatched_credit_pct": 3.8
+    },
+    {
+      "invoice_month": "2011-05",
+      "net_revenue": 733328.01,
+      "orders": 1662,
+      "credit_notes": 314,
+      "matched_credit_removed": 5069.66,
+      "unmatched_credit_remaining": 42132.85,
+      "unmatched_credit_pct": 5.7
+    },
+    {
+      "invoice_month": "2011-06",
+      "net_revenue": 728753.86,
+      "orders": 1518,
+      "credit_notes": 329,
+      "matched_credit_removed": 6706.51,
+      "unmatched_credit_remaining": 63863.27,
+      "unmatched_credit_pct": 8.8
+    },
+    {
+      "invoice_month": "2011-07",
+      "net_revenue": 679535.26,
+      "orders": 1447,
+      "credit_notes": 270,
+      "matched_credit_removed": 5991.16,
+      "unmatched_credit_remaining": 31927.97,
+      "unmatched_credit_pct": 4.7
+    },
+    {
+      "invoice_month": "2011-08",
+      "net_revenue": 719055.91,
+      "orders": 1336,
+      "credit_notes": 278,
+      "matched_credit_removed": 12793.77,
+      "unmatched_credit_remaining": 41537.03,
+      "unmatched_credit_pct": 5.8
+    },
+    {
+      "invoice_month": "2011-09",
+      "net_revenue": 1017713.77,
+      "orders": 1811,
+      "credit_notes": 333,
+      "matched_credit_removed": 10167.83,
+      "unmatched_credit_remaining": 28670.68,
+      "unmatched_credit_pct": 2.8
+    },
+    {
+      "invoice_month": "2011-10",
+      "net_revenue": 1073173.67,
+      "orders": 1993,
+      "credit_notes": 362,
+      "matched_credit_removed": 34399.74,
+      "unmatched_credit_remaining": 47495.76,
+      "unmatched_credit_pct": 4.4
+    },
+    {
+      "invoice_month": "2011-11",
+      "net_revenue": 1441525.58,
+      "orders": 2746,
+      "credit_notes": 441,
+      "matched_credit_removed": 16519.3,
+      "unmatched_credit_remaining": 31201.68,
+      "unmatched_credit_pct": 2.2
+    },
+    {
+      "invoice_month": "2011-12",
+      "net_revenue": 445449.1,
+      "orders": 813,
+      "credit_notes": 146,
+      "matched_credit_removed": 171110.21,
+      "unmatched_credit_remaining": 33979.06,
+      "unmatched_credit_pct": 7.6
+    }
+  ],
+  "year_on_year": [
+    {
+      "period": "Year 1 (Dec 2009 - Nov 2010)",
+      "orders": 19633,
+      "active_customers": 4226,
+      "units": 5455072,
+      "revenue": 9226574.93,
+      "avg_order_value": 469.95,
+      "revenue_per_active_customer": 2183.29,
+      "uk_share_of_revenue_pct": 86.2
+    },
+    {
+      "period": "Year 2 (Dec 2010 - Nov 2011)",
+      "orders": 18890,
+      "active_customers": 4284,
+      "units": 5111759,
+      "revenue": 9425361.16,
+      "avg_order_value": 498.96,
+      "revenue_per_active_customer": 2200.13,
+      "uk_share_of_revenue_pct": 84.5
+    }
+  ],
+  "new_vs_returning": [
+    {
+      "invoice_month": "2009-12",
+      "new_customer_revenue": 414613.47,
+      "returning_customer_revenue": 253630.84,
+      "new_customer_orders": 1035,
+      "returning_customer_orders": 456,
+      "returning_share_of_revenue_pct": 38.0
+    },
+    {
+      "invoice_month": "2010-01",
+      "new_customer_revenue": 145187.56,
+      "returning_customer_revenue": 382457.4,
+      "new_customer_orders": 381,
+      "returning_customer_orders": 570,
+      "returning_share_of_revenue_pct": 72.5
+    },
+    {
+      "invoice_month": "2010-02",
+      "new_customer_revenue": 158896.36,
+      "returning_customer_revenue": 329591.7,
+      "new_customer_orders": 414,
+      "returning_customer_orders": 669,
+      "returning_share_of_revenue_pct": 67.5
+    },
+    {
+      "invoice_month": "2010-03",
+      "new_customer_revenue": 179880.48,
+      "returning_customer_revenue": 478281.61,
+      "new_customer_orders": 471,
+      "returning_customer_orders": 1031,
+      "returning_share_of_revenue_pct": 72.7
+    },
+    {
+      "invoice_month": "2010-04",
+      "new_customer_revenue": 116835.95,
+      "returning_customer_revenue": 452233.61,
+      "new_customer_orders": 300,
+      "returning_customer_orders": 1009,
+      "returning_share_of_revenue_pct": 79.5
+    },
+    {
+      "invoice_month": "2010-05",
+      "new_customer_revenue": 103804.02,
+      "returning_customer_revenue": 469373.12,
+      "new_customer_orders": 267,
+      "returning_customer_orders": 1090,
+      "returning_share_of_revenue_pct": 81.9
+    },
+    {
+      "invoice_month": "2010-06",
+      "new_customer_revenue": 118658.92,
+      "returning_customer_revenue": 498960.9,
+      "new_customer_orders": 281,
+      "returning_customer_orders": 1194,
+      "returning_share_of_revenue_pct": 80.8
+    },
+    {
+      "invoice_month": "2010-07",
+      "new_customer_revenue": 62595.34,
+      "returning_customer_revenue": 504371.79,
+      "new_customer_orders": 195,
+      "returning_customer_orders": 1154,
+      "returning_share_of_revenue_pct": 89.0
+    },
+    {
+      "invoice_month": "2010-08",
+      "new_customer_revenue": 56220.6,
+      "returning_customer_revenue": 520034.66,
+      "new_customer_orders": 173,
+      "returning_customer_orders": 1097,
+      "returning_share_of_revenue_pct": 90.2
+    },
+    {
+      "invoice_month": "2010-09",
+      "new_customer_revenue": 151182.33,
+      "returning_customer_revenue": 638689.3,
+      "new_customer_orders": 247,
+      "returning_customer_orders": 1397,
+      "returning_share_of_revenue_pct": 80.9
+    },
+    {
+      "invoice_month": "2010-10",
+      "new_customer_revenue": 153699.08,
+      "returning_customer_revenue": 830576.0,
+      "new_customer_orders": 383,
+      "returning_customer_orders": 1711,
+      "returning_share_of_revenue_pct": 84.4
+    },
+    {
+      "invoice_month": "2010-11",
+      "new_customer_revenue": 139525.27,
+      "returning_customer_revenue": 1001987.4,
+      "new_customer_orders": 352,
+      "returning_customer_orders": 2205,
+      "returning_share_of_revenue_pct": 87.8
+    },
+    {
+      "invoice_month": "2010-12",
+      "new_customer_revenue": 25626.25,
+      "returning_customer_revenue": 532939.42,
+      "new_customer_orders": 77,
+      "returning_customer_orders": 1313,
+      "returning_share_of_revenue_pct": 95.4
+    },
+    {
+      "invoice_month": "2011-01",
+      "new_customer_revenue": 29910.97,
+      "returning_customer_revenue": 427951.73,
+      "new_customer_orders": 73,
+      "returning_customer_orders": 906,
+      "returning_share_of_revenue_pct": 93.5
+    },
+    {
+      "invoice_month": "2011-02",
+      "new_customer_revenue": 39025.06,
+      "returning_customer_revenue": 400312.51,
+      "new_customer_orders": 128,
+      "returning_customer_orders": 861,
+      "returning_share_of_revenue_pct": 91.1
+    },
+    {
+      "invoice_month": "2011-03",
+      "new_customer_revenue": 67117.33,
+      "returning_customer_revenue": 507855.26,
+      "new_customer_orders": 184,
+      "returning_customer_orders": 1123,
+      "returning_share_of_revenue_pct": 88.3
+    },
+    {
+      "invoice_month": "2011-04",
+      "new_customer_revenue": 37194.03,
+      "returning_customer_revenue": 413073.36,
+      "new_customer_orders": 108,
+      "returning_customer_orders": 1025,
+      "returning_share_of_revenue_pct": 91.7
+    },
+    {
+      "invoice_month": "2011-05",
+      "new_customer_revenue": 46229.79,
+      "returning_customer_revenue": 606387.71,
+      "new_customer_orders": 118,
+      "returning_customer_orders": 1420,
+      "returning_share_of_revenue_pct": 92.9
+    },
+    {
+      "invoice_month": "2011-06",
+      "new_customer_revenue": 79939.0,
+      "returning_customer_revenue": 564520.8,
+      "new_customer_orders": 111,
+      "returning_customer_orders": 1272,
+      "returning_share_of_revenue_pct": 87.6
+    },
+    {
+      "invoice_month": "2011-07",
+      "new_customer_revenue": 39605.45,
+      "returning_customer_revenue": 543314.26,
+      "new_customer_orders": 107,
+      "returning_customer_orders": 1209,
+      "returning_share_of_revenue_pct": 93.2
+    },
+    {
+      "invoice_month": "2011-08",
+      "new_customer_revenue": 42469.3,
+      "returning_customer_revenue": 587884.49,
+      "new_customer_orders": 110,
+      "returning_customer_orders": 1154,
+      "returning_share_of_revenue_pct": 93.3
+    },
+    {
+      "invoice_month": "2011-09",
+      "new_customer_revenue": 84633.88,
+      "returning_customer_revenue": 843512.14,
+      "new_customer_orders": 189,
+      "returning_customer_orders": 1543,
+      "returning_share_of_revenue_pct": 90.9
+    },
+    {
+      "invoice_month": "2011-10",
+      "new_customer_revenue": 88243.38,
+      "returning_customer_revenue": 883942.6,
+      "new_customer_orders": 233,
+      "returning_customer_orders": 1658,
+      "returning_share_of_revenue_pct": 90.9
+    },
+    {
+      "invoice_month": "2011-11",
+      "new_customer_revenue": 68696.89,
+      "returning_customer_revenue": 1057246.71,
+      "new_customer_orders": 202,
+      "returning_customer_orders": 2435,
+      "returning_share_of_revenue_pct": 93.9
+    },
+    {
+      "invoice_month": "2011-12",
+      "new_customer_revenue": 23207.4,
+      "returning_customer_revenue": 319978.86,
+      "new_customer_orders": 29,
+      "returning_customer_orders": 744,
+      "returning_share_of_revenue_pct": 93.2
+    }
+  ]
+}

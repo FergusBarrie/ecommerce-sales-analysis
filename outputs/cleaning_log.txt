@@ -1,0 +1,25 @@
+Loaded sheet Year 2009-2010: 525,461 rows
+Loaded sheet Year 2010-2011: 541,910 rows
+
+Combined raw rows: 1,067,371
+Date range: 2009-12-01 07:45:00 to 2011-12-09 12:50:00
+Step 1  removed 34,335 exact duplicate rows
+Step 2  moved 19,104 cancellation lines to a separate table
+Step 3  removed 6 bad-debt adjustment rows (invoices starting with A)
+Step 4  removed 3,393 rows with quantity <= 0 and 6,014 rows with price <= 0
+Step 5  removed 4,555 postage / fee / adjustment lines worth GBP 821,337
+Step 6  filled 0 missing descriptions from the stock code, dropped 0 that could not be filled
+Step 7  matched 5,990 of 19,104 credit lines back to a sale and removed both sides
+        gross product sales were GBP 19,643,861.62; removing matched reversals leaves GBP 19,097,385.19
+        total value credited over the period: GBP 1,462,050.61; GBP 915,574.18 of that could not be
+        tied to a specific sale line (partial returns, postage and fee credits, and credits
+        with no customer ID), so the revenue figure is still very slightly overstated
+
+Kept rows: 997,367 (93.4% of the raw file)
+Rows with no customer ID: 226,761 (22.7%) - kept for revenue, excluded from per-customer analysis
+
+Total revenue in the clean sales table: GBP 19,097,385.19
+Invoices: 39,336   Products: 4,718   Customers: 5,839   Countries: 43
+
+Wrote E:\Portfolio\projects\01-ecommerce-sales-analysis\data\clean\retail_clean.csv
+Wrote E:\Portfolio\projects\01-ecommerce-sales-analysis\data\clean\retail.db (tables: sales, cancellations)

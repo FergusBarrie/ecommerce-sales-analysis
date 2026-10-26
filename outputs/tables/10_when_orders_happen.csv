@@ -1,0 +1,8 @@
+weekday,orders,revenue,avg_order_value,earliest_hour,latest_hour
+Thursday,8120,3935491.97,484.67,6,20
+Tuesday,7113,3742448.95,526.14,7,20
+Wednesday,7089,3342763.9,471.54,7,20
+Monday,6215,3360203.93,540.66,7,18
+Friday,5956,2942598.72,494.06,7,20
+Sunday,4813,1764359.29,366.58,9,17
+Saturday,30,9518.43,317.28,10,16
