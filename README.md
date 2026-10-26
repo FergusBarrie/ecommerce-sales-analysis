@@ -167,8 +167,9 @@ cancelled orders counted as revenue — including the two largest "sales" in the
 (£168,470 and £77,184), both of which were credited back in full within two days. Matching
 them back reduced revenue from £19.64m to £19.10m.
 
-## Honest note on this project
+## Note on this project
 
-I built this project to learn, and the write-up only claims what the data supports. The
-[learning guide](LEARNING_GUIDE.md) explains every query and every figure, including the
-parts I found difficult. I am comfortable walking through any of it line by line.
+This is a learning project built with AI assistance. The analysis is reproducible from the
+scripts here and the write-up only claims what the data supports, but the SQL and Python
+were not written by me. The [learning guide](LEARNING_GUIDE.md) explains how each part
+works.
